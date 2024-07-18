@@ -1,4 +1,4 @@
-# hackinwolf-CV
+# hackinwolf-cv
 
 My curriculum vitae (CV) written using LaTeX. In my CV, you may find my contact information, websites, education, certifications, experience, skills, and personal achievements.
 
@@ -18,7 +18,7 @@ sudo apt install texlive-extra-utils
 pdflatex main.tex
 ```
 
-## Author
+## Derivative of the work by
 
 👤 **Aras Güngöre**
 
