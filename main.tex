@@ -1,0 +1,352 @@
+%-------------------------
+% Resume in Latex
+% Author : Benjamin Wolf
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{hyphenat}
+\usepackage{fontawesome}
+\input{glyphtounicode}
+
+
+%---------- FONT OPTIONS ----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeEducationHeading}[5]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small #3, #4} & \textit{\small GPA: #5} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeCertificationHeading}[3]{
+  \vspace{-2pt}\item
+    \textbf{#1} \ifx&#3& \else \textit{\small [Score: #3]} \fi \hfill \textit{\small #2} \vspace{-5pt}
+}
+
+\newcommand{\resumePersonalHeading}[3]{
+  \vspace{-2pt}\item
+    \textbf{#1} \ifx&#3& \else \textit{\small [#3]} \fi \hfill \textit{\small #2} \vspace{-5pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeOrganizationHeading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textit{\small #2} \\
+      \textit{\small#3}
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%---------- HEADING ----------
+
+\begin{center}
+  \textbf{\Huge \scshape Benjamin Wolf} \\ \vspace{3pt}
+  %   \small
+  %   \faMobile \hspace{.5pt} \href{tel:171715142553}{+1 717 514 2553}
+  %   $|$
+  %   \faAt \hspace{.5pt} \href{mailto:hackinwolf@gmail.com}{hackinwolf@gmail.com}
+  %   $|$
+  %   \faLinkedinSquare \hspace{.5pt} \href{https://www.linkedin.com/in/hackinwolf}{LinkedIn}
+  %   $|$
+  %   \faGithub \hspace{.5pt} \href{https://github.com/hackingwolf}{GitHub}
+  %   $|$
+  %   %    \faGlobe \hspace{.5pt} \href{https://arasgungore.github.io}{Portfolio}
+  %   %    $|$
+\end{center}
+
+%----------- EDUCATION -----------
+
+\section{Education}
+\vspace{3pt}
+\resumeSubHeadingListStart
+
+\resumeEducationHeading
+{M.Sc. in CyberSecurity}{2017}
+{Liberty University}{Lynchburg, VA}
+{3.85}
+
+\resumeEducationHeading
+{B.Sc. in Management Information Systems}{2011}
+{Penn State University}{Harrisburg, PA}
+{3.5}
+
+\resumeSubHeadingListEnd
+
+%----------- CERTIFICATIONS -----------
+
+\section{Certifications}
+\vspace{3pt}
+\resumeSubHeadingListStart
+
+\resumeCertificationHeading
+{Google Professessional Cloud Security Engineer (PCSE)}{2024}{}
+
+\resumeCertificationHeading
+{SANS GIAC Web Application Penetration Tester (GWAPT)}{2023}{98\%}
+
+\resumeCertificationHeading
+{SANS GIAC Security Essentials (GSEC)}{2022}{96\%}
+
+\resumeSubHeadingListEnd
+
+%----------- EXPERIENCE -----------
+
+\section{Experience}
+\vspace{3pt}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{UPS InfoSec Vulnerability Management, Remote}{}
+{SR. PENTEST ANALYST}{August 2022 \textbf{--} Present, Full-time}
+\resumeItemListStart
+\resumeItem{Conducted web application and network penetration testing to identify and remediate security vulnerabilities.}
+\resumeItem{Processed bug bounty submissions and collaborated with app development teams to help them understand and address the reported vulnerabilities.}
+\resumeItem{Developed tools to automate penetration testing checks, simplifying and enhancing the efficiency of the testing process.}
+\resumeItem{Coordinated third-party penetration tests between Trustwave Spiderlabs and application development teams.}
+\resumeItem{Contributed to the development and refinement of the CrowdStrike technical and management tabletop exercises.}
+\resumeItemListEnd
+
+% Add a smaller vertical space before the next item
+\vspace{-15pt}
+
+\resumeSubheading
+{}{}
+{PENTEST ANALYST}{January 2022 \textbf{--} August 2022, Full-time}
+\resumeItemListStart
+\resumeItem{Assisted application teams in identifying, understanding, and remediating vulnerabilities in their applications.}
+\resumeItem{Onboarded applications into the Invicti web application security testing tool and evaluated scan results.}
+\resumeItem{Performed manual vulnerability assessments on applications that were not suitable for automated scanning.}
+\resumeItem{Ensured compliance with policies and standards outlined in the UPS Standard Practice Manual (SPM).}
+\resumeItemListEnd
+
+\resumeSubheading
+{UPS Corporate IE EUD, Remote}{}
+{SENIOR WEB APPLICATION DEVELOPER}{February 2019 \textbf{--} January 2021, Full-time}
+\resumeItemListStart
+\resumeItem{Made significant contributions to the P2101 – Peak Helper Track Improvements Charter; developed the internet-facing HelperTrack REST API and led the security testing and mitigation efforts, resulting in a clean Netsparker scan.}
+\resumeItem{Established a schema-based access control security model for MS SQL Server databases to better enforce the principles of least privilege, segregation of duties, and need-to-know.}
+\resumeItem{Identified vulnerabilities in iGate and other web applications and implemented preventive and mitigating measures.}
+\resumeItem{Contributed to updating code assessment line items to include secure coding practices.}
+\resumeItem{Implemented Azure-based authentication in the iGate Web System.}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%----------- SKILLS -----------
+
+\section{Technical Skills}
+\vspace{2pt}
+\resumeSubHeadingListStart
+\small{\item        {
+
+              \textbf{Operating Systems:}{ Kali Linux, Microsoft Windows, Windows Server/IIS, Unix/Linux, Android, iOS} \\ \vspace{3pt}
+
+              \textbf{Applications:}{ Burp Suite Pro, Postman, Insomnia, OWASP Zap, Invicti, Nmap, Virtual Box, NetCat, SSLScan, K8s, Wireshark, Metasploit, and various other security testing and development tools} \\ \vspace{3pt}
+
+              \textbf{Languages:}{ Python, JavaScript, PowerShell, HTML, CSS, SQL, LaTeX} \\ \vspace{3pt}
+
+        }}
+\resumeSubHeadingListEnd
+
+%----------- PERSONAL ACHIEVEMENTS -----------
+
+\section{Personal Achievements}
+\vspace{3pt}
+\resumeSubHeadingListStart
+
+\resumePersonalHeading
+{Erie Marathon}{2022}{Time: 2:51}
+
+\resumePersonalHeading
+{Boston Marathon}{2023}{Time: 2:55}
+
+\resumePersonalHeading
+{Boston Marathon}{2024}{Time: 2:58}
+
+\resumeSubHeadingListEnd
+
+%----------- PROJECTS -----------
+
+% \section{Projects}
+% \vspace{3pt}
+% \resumeSubHeadingListStart
+
+% \resumeProjectHeading
+% {\textbf{Filters and Fractals} $|$ \emph{\href{https://github.com/arasgungore/filters-and-fractals}{\color{blue}GitHub}}}{}
+% \resumeItemListStart
+% \resumeItem{A C project which implements a variety of image processing operations that manipulate the size, filter, brightness, contrast, saturation, and other properties of PPM images from scratch and recursive fractal generation functions to model popular fractals including Mandelbrot set, Julia set, Koch curve, Barnsley fern, and Sierpinski triangle.}
+% \resumeItemListEnd
+
+% \resumeProjectHeading
+% {\textbf{Chess Bot} $|$ \emph{\href{https://github.com/arasgungore/chess-bot}{\color{blue}GitHub}}}{}
+% \resumeItemListStart
+% \resumeItem{A C++ project in which you can play chess against an AI with a specified decision tree depth that uses alpha-beta pruning algorithm to predict the optimal move. Aside from basic moves, this mini chess engine also implements chess rules such as castling, en passant, fifty-move rule, threefold repetition, and pawn promotion.}
+% \resumeItemListEnd
+
+% \resumeProjectHeading
+% {\textbf{DS\&A Projects} $|$ \emph{\href{https://github.com/arasgungore/CMPE250-projects}{\color{blue}GitHub}}}{}
+% \resumeItemListStart
+% \resumeItem{Five Java projects that apply DS\&A concepts such as discrete-event simulation using priority queues, Dijkstra's shortest path algorithm, Prim's algorithm to find the minimum spanning tree, Dinic's algorithm for maximum flow problems, and weighted job scheduling with dynamic programming to real-world problems.}
+% \resumeItemListEnd
+
+% \resumeSubHeadingListEnd
+
+%----------- AWARDS & ACHIEVEMENTS -----------
+
+% \section{Awards \& Achievements}
+% \vspace{2pt}
+% \resumeSubHeadingListStart
+% \small{\item{
+%               \textbf{High Honors Degree:}{ Awarded to Bachelor alumni who have graduated with a GPA greater than or equal to 3.50 by Boğaziçi University. (Jul 2023)} \\ \vspace{3pt}
+
+%               \textbf{TÜBİTAK 2247-C Intern Researcher Scholarship:}{ Awarded to students who take part in research projects carried out by the Scientific and Technological Research Council of Turkey (TÜBİTAK). (Dec 2021 \textbf{--} Jun 2022)} \\ \vspace{3pt}
+
+%               % \textbf{National University Admission Exam (YKS):}{ Ranked $75^{th}$ in Mathematics and Science among ca. 2.3 million candidates with a test score of 489.92/500. (Jul 2018)} \\ \vspace{3pt}
+
+%               \textbf{KYK Outstanding Success Scholarship:}{ Awarded to students who have been ranked in the top 100 on National University Admission Exam by Higher Education Credit and Hostels Institution (KYK). (Sep 2018 \textbf{--} Jun 2023)} \\ \vspace{3pt}
+
+%               % \textbf{Boğaziçi University Success Scholarship:}{ Awarded to students who have been ranked in the top 100 on National University Admission Exam by Boğaziçi University. (Sep 2018 \textbf{--} Jun 2023)} \\ \vspace{3pt}
+
+%               \textbf{Kocaeli Science High School Valedictorian Award:}{ Graduated as the highest ranked student. (Jun 2018)}
+%         }}
+% \resumeSubHeadingListEnd
+
+%----------- RELEVANT COURSEWORK -----------
+
+% \section{Relevant Coursework}
+% \vspace{2pt}
+% \resumeSubHeadingListStart
+% \small{\item{
+% \textbf{Major coursework:}{ Materials Science, Electrical Circuits I-II, Digital System Design, Numerical Methods, Probability Theory, Electronics I-II, Signals and Systems, Electromagnetic Field Theory, Energy Conversion, System Dynamics and Control, Communication Engineering, Pattern Recognition, Introduction to Digital Signal Processing, Introduction to Digital Communications, Introduction to Database Systems, Introduction to Image Processing, Machine Vision} \\ \vspace{3pt}
+
+% \textbf{Minor coursework:}{ Discrete Computational Structures, Introduction to Object-Oriented Programming, Data Structures and Algorithms, Computer Organization, Fundamentals of Software Engineering}
+% }}
+% \resumeSubHeadingListEnd
+
+%----------- ORGANIZATIONS -----------
+
+% \section{Organizations}
+% \resumeSubHeadingListStart
+
+% \resumeOrganizationHeading
+% {Institute of Electrical and Electronics Engineers (IEEE)}{Feb 2022 -- Present}{Student Member}
+
+% \resumeSubHeadingListEnd
+
+%----------- HOBBIES -----------
+
+% \section{Hobbies}
+% \resumeSubHeadingListStart
+% \small{\item{Basketball, Swimming, Fitness, Eight-ball, Horology}}
+% \resumeSubHeadingListEnd
+
+%----------- REFERENCES -----------
+
+% \section{References}
+% \vspace{2pt}
+% \resumeSubHeadingListStart
+% \item{References available upon request.}
+% \resumeSubHeadingListEnd
+
+%-------------------------------------------
+\end{document}
